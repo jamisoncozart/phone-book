@@ -53,6 +53,15 @@ class PhoneBook
   }
   static void LookUpContact()
   {
-
+    Console.WriteLine("LOOK UP CONTACT");
+    Console.WriteLine("What is the name of the contact you would like to look up?");
+    string name = Console.ReadLine();
+    if(!phoneNumbers.ContainsKey(name))
+    {
+      Console.WriteLine("I'm sorry, that name does not exist in the phone book yet.");
+    }
+    else{
+      Console.WriteLine(name + "'s number is: " + phoneNumbers[name]);
+    }
   }
 }
