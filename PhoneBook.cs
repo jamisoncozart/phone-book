@@ -46,12 +46,11 @@ class PhoneBook
     if(phoneNumbers.ContainsKey(name))
     {
       Console.WriteLine("I'm sorry, that name is already in the Phone Book. " + name + "'s number is: " + phoneNumbers[name]);
-      Main();
     }
     else{
       phoneNumbers.Add(name, number);
-      Main();
     }
+    Main();
   }
   static void LookUpContact()
   {
@@ -61,11 +60,10 @@ class PhoneBook
     if(!phoneNumbers.ContainsKey(name))
     {
       Console.WriteLine("I'm sorry, that name does not exist in the phone book yet.");
-      Main();
     }
     else{
       Console.WriteLine(name + "'s number is: " + phoneNumbers[name]);
-      Main();
     }
+    Main();
   }
 }
