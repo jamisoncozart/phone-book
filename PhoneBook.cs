@@ -8,4 +8,12 @@ class PhoneBook
   {
     //code
   }
+  static void AddNewContact()
+  {
+
+  }
+  static void LookUpContact()
+  {
+    
+  }
 }
